@@ -13,12 +13,13 @@ yarn install
 
 #### To test commit lint
 ```sh
-yarn format
+echo "this would fail" | yarn commitlint
+echo "docs: husky config" | yarn commitlint
 ```
 
 #### To test ESlint using Hooks
 ```sh
-yarn format
+yarn pre-commit
 ```
 
 #### To test Prettier 
@@ -31,3 +32,4 @@ yarn format
 
 * https://remarkablemark.org/blog/2019/05/29/git-husky-commitlint/
 
+* https://typicode.github.io/husky/#/?id=migrate-from-v4-to-v7
