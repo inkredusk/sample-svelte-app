@@ -8,8 +8,7 @@
     "start": "sirv public --no-clear",
     "format": "prettier --write ./src/",
     "lint": "eslint './src/'",
-    "pre-commit": "eslint . --ext .js,.svelte --fix",
-    "prepare": "husky install"
+    "pre-commit": "eslint . --ext .js,.svelte --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "^14.1.0",
@@ -35,7 +34,6 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
-      "svelte-check",
       "npm run pre-commit"
     ]
   },
