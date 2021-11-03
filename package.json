@@ -8,6 +8,7 @@
     "start": "sirv public --no-clear",
     "format": "prettier --write ./src/",
     "lint": "eslint './src/'",
+    "commentlint": "yarn commitlint --edit $1",
     "pre-commit": "eslint . --ext .js,.svelte --fix"
   },
   "devDependencies": {
@@ -34,6 +35,7 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
+      "npm run commentlint",
       "npm run pre-commit"
     ]
   },
