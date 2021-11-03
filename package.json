@@ -31,6 +31,9 @@
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-standard": "^5.0.0"
   },
+  "lint-staged": {
+    "*.{js,ts,svelte}": ["svelte-check", "npm run pre-commit"]
+  },
   "dependencies": {
     "sirv-cli": "^1.0.0"
   }
