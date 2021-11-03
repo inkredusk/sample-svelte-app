@@ -35,8 +35,8 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
-      "npm run commentlint",
-      "npm run pre-commit"
+      "yarn commentlint",
+      "yarn pre-commit"
     ]
   },
   "dependencies": {
