@@ -1,7 +1,7 @@
 module.exports = {
     parserPreset: "conventional-changelog-conventionalcommits",
     rules: {
-      "body-full-stop": [1, "always"],
+      "body-full-stop": [1, "always", "."],
       "body-leading-blank": [1, "always"],
       "subject-case": [
         2,
