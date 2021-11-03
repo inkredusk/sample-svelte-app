@@ -8,8 +8,9 @@
     "start": "sirv public --no-clear",
     "format": "prettier --write ./src/",
     "lint": "eslint './src/'",
-    "commentlint": "yarn commitlint --edit $1",
-    "pre-commit": "eslint . --ext .js,.svelte --fix"
+    "commentlint": "yarn commitlint --edit",
+    "pre-commit": "eslint . --ext .js,.svelte --fix",
+    "postinstall": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^14.1.0",
