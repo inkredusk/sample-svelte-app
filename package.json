@@ -8,7 +8,6 @@
     "start": "sirv public --no-clear",
     "format": "prettier --write ./src/",
     "lint": "eslint './src/'",
-    "commentlint": "yarn commitlint --edit",
     "pre-commit": "eslint . --ext .js,.svelte --fix",
     "postinstall": "husky install"
   },
@@ -36,7 +35,6 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
-      "yarn commentlint",
       "yarn pre-commit"
     ]
   },
