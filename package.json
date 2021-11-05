@@ -35,10 +35,12 @@
   },
   "lint-staged": {
     "*.{js,ts,svelte}": [
+      "svelte-check",
       "yarn pre-commit"
     ]
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0"
+    "sirv-cli": "^1.0.0",
+    "svelte-check": "^2.2.8"
   }
 }
